@@ -1,0 +1,435 @@
+
+<van-row >
+    <van-col span="6">
+        <view class="first-row">
+          <image src="{{headImgurl}}" style="border-raidus:100%;width:50px;height:50px"></image>
+          <van-icon name="chat-o" info="{{infonumber}}" bind:click="infoNotifyClick" />
+        </view>
+    </van-col>
+    <van-col span="18">
+      <view class="searchright">
+          <van-row>
+            <van-icon name="search" />
+          </van-row>
+          <van-row>
+            <van-field
+              value="{{ value }}"
+              placeholder="搜索物品"
+              border="{{ false }}"
+              bind:change="onChange"
+            />
+          </van-row>
+      </view>
+    </van-col>
+    
+</van-row>
+
+
+<!--第二行标签内容-->
+<van-row>
+      <van-tabs active="{{ active }}" sticky>
+        <van-tab title="新品">
+        <!--物品1-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone" >
+                          <van-card
+                          num="2"
+                          tag="秋季"
+                          price="10.00"
+                          desc="运送保险免费退换"
+                          title="圆领衬衣"
+                          thumb="{{ imageURL.a }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection" data-id="1">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+           <van-notify id="van-notify" />
+           <!--物品2-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone" >
+                          <van-card
+                          num="10"
+                          tag="三八节"
+                          price="1000.00"
+                          desc="运送保险免费退换，0.5折"
+                          title="连帽三件套"
+                          thumb="{{ imageURL.g }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection" data-id="2">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品3-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="14"
+                          tag="春秋季"
+                          price="50.00"
+                          desc="运送保险"
+                          title="ins卫衣内搭打底衫"
+                          thumb="{{ imageURL.e }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection" data-id="3">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品四-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="5"
+                          tag="秋季"
+                          price="168.00"
+                          desc="运送保险免费退换"
+                          title="T恤男装韩版休闲上衣"
+                          thumb="{{ imageURL.b }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection" data-id="4">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品5-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="3"
+                          tag="春季"
+                          price="109.00"
+                          desc="运送保险免费退换"
+                          title="新款合身纯棉T恤"
+                          thumb="{{ imageURL.e }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection" data-id="5">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品6-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="6"
+                          tag="春秋季"
+                          price="128.00"
+                          desc="运送保险免费退换"
+                          title="老年女装春秋妮子上衣"
+                          thumb="{{ imageURL.f }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection" data-id="6">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品7-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="23"
+                          tag="夏季"
+                          price="199.00"
+                          desc="运送保险免费退换"
+                          title="花式抽褶长裙427030"
+                          thumb="{{ imageURL.g }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection" data-id="7">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品1-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="2"
+                          tag="秋季"
+                          price="10.00"
+                          desc="运送保险免费退换"
+                          title="圆领衬衣"
+                          thumb="{{ imageURL.g }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection" data-id="8">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品1-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="2"
+                          tag="秋季"
+                          price="10.00"
+                          desc="运送保险免费退换"
+                          title="圆领衬衣"
+                          thumb="{{ imageURL.g }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection" data-id="9">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品1-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="2"
+                          tag="秋季"
+                          price="10.00"
+                          desc="运送保险免费退换"
+                          title="圆领衬衣"
+                          thumb="{{ imageURL.g }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品1-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="2"
+                          tag="秋季"
+                          price="10.00"
+                          desc="运送保险免费退换"
+                          title="圆领衬衣"
+                          thumb="{{ imageURL.g }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品1-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="2"
+                          tag="秋季"
+                          price="10.00"
+                          desc="运送保险免费退换"
+                          title="圆领衬衣"
+                          thumb="{{ imageURL.g }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+          <!--物品1-->
+          <van-row>
+                  <van-row>
+                  <view class="tagone">
+                          <van-card
+                          num="2"
+                          tag="秋季"
+                          price="10.00"
+                          desc="运送保险免费退换"
+                          title="圆领衬衣"
+                          thumb="{{ imageURL.g }}"
+                        >
+                        </van-card>
+                  </view>
+                </van-row>
+                <van-row>
+                  <view class="productfooter">
+                    <van-button round size="mini" bind:click="collection">收藏</van-button>
+                    <van-button round size="mini">详情</van-button>
+                   
+                  </view>
+                </van-row>
+          </van-row>
+          <view class="space">
+          </view>
+        </van-tab>
+
+
+        <!--标签2的内容-->
+        <van-tab title="爆款">
+          <van-row>
+            <view class="tagone">可以在此处改写标签2的内容</view>
+          </van-row>
+        </van-tab>
+
+
+
+        <van-tab title="国际">
+          <van-row>
+            <view class="tagone">可以在此处改写标签3的内容</view>
+          </van-row>
+        </van-tab>
+        <van-tab title="机票">
+          <van-row>
+            <view class="tagone">可以在此处改写标签4的内容</view>
+          </van-row>
+        </van-tab>
+        <van-tab title="拍卖">
+          <van-row>
+            <view class="tagone">可以在此处改写标签5的内容</view>
+          </van-row>
+        </van-tab>
+        <van-tab title="吃货">
+          <van-row>
+            <view class="tagone">可以在此处改写标签6的内容</view>
+          </van-row>
+        </van-tab>
+      </van-tabs>
+</van-row>
+          
+ 
+        
+          
+  
+  
+
+    
+
+
+
+
+
+
+
+  
+      
+  
+  
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

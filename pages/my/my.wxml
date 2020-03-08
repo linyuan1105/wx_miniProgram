@@ -1,0 +1,81 @@
+<!--pages/my.wxml-->
+<!--数据收藏只是按顺序收藏了他们的id-->
+<van-row>
+      <view class="headUrl">
+        <van-row>
+         <view>
+          <van-col col="24">
+            <van-icon round name="{{iconUrlimg}}"  size="30px"/>
+          </van-col>
+         </view> 
+        </van-row>
+      </view>
+</van-row>
+<van-row>
+  <view class="userName">
+      <van-col col="8">
+         <view>{{username}}</view>
+      </van-col>
+  </view>
+</van-row>
+<!--弹出框设置-->
+<van-popup
+  show="{{ show }}"
+  position="left"
+  custom-style="width: 100px;height:100%"
+  bind:close="onClose"
+>
+  <van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+  direction="vertical"
+  active-icon="success"
+  active-color="#38f"
+/>
+</van-popup>
+
+
+
+
+
+
+
+
+
+    <van-row>
+      <van-cell title="我的消费" is-link />
+    </van-row>
+    <van-row>
+      <van-cell title="我的好友"  is-link/>
+    </van-row>
+   
+    <van-row>
+        <van-cell title="我的收藏"  is-link/>
+    </van-row>
+
+<!--底部信息-->
+    <van-row>
+      <van-cell title="更多信息" is-link bind:click="showPopup" />
+    </van-row>
+    <van-row>
+      <view class="footermenu">
+            <view style="width:{{footerwidth*0.25}}px" class="footermenu">
+              <van-col span="6"><van-icon name="cart-o" size="25px"/></van-col>
+            </view>
+            <view style="width:{{footerwidth*0.25}}px" class="footermenu">
+              <van-col span="6"><van-icon name="thumb-circle-o" size="25px"/></van-col>
+            </view>
+            <view style="width:{{footerwidth*0.25}}px" class="footermenu">
+                <van-col span="6"><van-icon name="balance-o" size="25px"/></van-col>
+            </view>
+            <view style="width:{{footerwidth*0.25}}px" class="footermenu">
+              <van-col span="6"><van-icon name="more-o" size="25px" info="{{collectnumber}}"/></van-col>
+            </view>
+      </view>
+      
+    </van-row>
+
+
+
+
+

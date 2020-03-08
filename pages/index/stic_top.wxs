@@ -1,0 +1,14 @@
+var funcA = function (e, ins) {
+  // console.log('source is', JSON.stringify(e))
+  var scrollTop = e.detail.scrollTop
+  console.log(scrollTop)
+  if (scrollTop > 10) {
+    ins.selectComponent('.head').setStyle({}).addClass('page-group-position')
+  } else {
+    ins.selectComponent('.head').setStyle({}).removeClass('page-group-position')
+    
+  }
+}
+module.exports = {
+  funcA: funcA
+}

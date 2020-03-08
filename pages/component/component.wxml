@@ -1,0 +1,5 @@
+<view class="inner">
+  {{innerText}}
+</view>
+<button bindtap="onTap"> 点击按钮触发myevent事件</button>
+<slot></slot>

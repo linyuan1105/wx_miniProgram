@@ -1,0 +1,24 @@
+/* pages/my.wxss */
+.headUrl{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(39, 128, 128);
+  font-size: 12px;
+}
+.footer{
+  top: 1000px;
+  bottom: 0px;
+}
+.footermenu{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-between;
+}
